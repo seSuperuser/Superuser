@@ -375,7 +375,7 @@ public class SettingsFragment extends BetterListFragment {
         })
         .setAttrDrawable(R.attr.notificationsIcon);
 
-        if ("com.koushikdutta.superuser".equals(getActivity().getPackageName())) {
+        if ("me.phh.superuser".equals(getActivity().getPackageName())) {
             addItem(R.string.settings, new ListItem(this, R.string.theme, 0) {
                 void update() {
                     switch (Settings.getTheme(getActivity())) {
